@@ -273,7 +273,9 @@ function draw() {
             maxDistance = count;
             document.getElementById("maxScore_ID").innerText = maxDistance;
         }
+        //Display Speedometer
         document.getElementById("speed_ID").innerHTML = `${speed} m/s`;
+        document.getElementById("speed_ID").innerHTML = `${speed*3.6} km/hr`;
         count++;
     }
     window.requestAnimationFrame(draw);
